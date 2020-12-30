@@ -31,7 +31,7 @@ This "cleaned" shapefile was then imported as "Asset" in Google Earth Engine. A 
 
 The results of the classification were exported in google Drive as GeoTiff, and the image histograms were exported from the Earth Engine Code Editor Console as CSV.
 
-The resulting map is rendered hereafter.
+The resulting map is rendered hereafter. The GeoTiff is available in the "raster" folder.
 
 
 

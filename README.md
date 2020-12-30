@@ -14,13 +14,13 @@ This is not the first work where satellite data is used to map the study area. F
 ### Step 1: High-resolution imagery mapping
 The starting point is a high-resolution multispectral (R,G,B,NIR) PLEIADES image acquired on 2020-03-26. The image was pan-sharpened using ArcMap and the panchromatic image accompanying the original dataset. The image is shown below within the broader context of the Spermonde Archipelago.
 
-<img src="images/Pleiades_extent.jpg" height="50%" width="50%" align="center"/>
+<img src="images/Pleiades_extent.jpg" height="70%" width="70%" align="center"/>
 
 This image was then classified with Trimble Ecognition Developer (ver.9.5.1) as follows:
 1. The image was segmented using a "multiresolution segmentation", giving as weights for R,G,B = 1 and NIR = 2. The scale parameter of the segmentation was set to 200. The shape of the homogeneity criterion was set to 0.1 and its compactness was set to 0.5.
 2. Six classes were defined with the help of the pansharpened image: Built environment,Deep water,Shallow-water sand/reef complex,Beach sands,Shallow-water reef,Vegetation. These classes were used in a Nearest Neighbor classification. The results were exported as shapefile (smooting the edges with the built-in Ecognition export function).
 
-The results of the Nearest Neighbor classification are shown hereafter.
+Some examples of the results of the Nearest Neighbor classification are shown hereafter. The shapefile is available in the "data" folder.
 
 IMAGE TRIMBLE RESULTS
 

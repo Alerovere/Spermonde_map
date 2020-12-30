@@ -22,7 +22,7 @@ This image was then classified with Trimble Ecognition Developer (ver.9.5.1) as 
 
 Some examples of the results of the Nearest Neighbor classification are shown hereafter. The shapefile is available in the "data" folder.
 
-IMAGE TRIMBLE RESULTS
+<img src="images/training areas.jpg" height="70%" width="70%" align="center"/>
 
 ### Step 2: SENTINEL2 classification
 The shapefile gathered from Step1 was edited in ArcMap. First, deep water areas were deleted and a simpler feature was drawn, to avoid having too many polygons for the next classification. Second, very small polygons were deleted. A column was added in the shapefile attribute table, with integer values corresponding to classes. Those are the results of classification errors due to the presence of clouds or small boats on the water surface.

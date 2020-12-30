@@ -12,12 +12,9 @@ This is not the first work where satellite data is used to map the study area. F
 
 ## Two-stepped mapping approach
 ### Step 1: High-resolution imagery mapping
-The starting point is a high-resolution multispectral (R,G,B,NIR) PLEIADES image acquired on 2020-03-26. The image was pan-sharpened using ArcMap and the panchromatic image accompanying the original dataset. 
+The starting point is a high-resolution multispectral (R,G,B,NIR) PLEIADES image acquired on 2020-03-26. The image was pan-sharpened using ArcMap and the panchromatic image accompanying the original dataset. The image is shown below within the broader context of the Spermonde Archipelago.
 
-<span class="img_container center" style="display: block;">
-    <img src="images/Pleiades_extent.jpg" height="50%" width="50%" style="display:block; margin-left: auto; margin-right: auto;" title="caption" />
-    <span class="img_caption" style="display: block; text-align: center;">High-resolution PLEIADES imagery</span>
-</span>
+<img src="images/Pleiades_extent.jpg" height="50%" width="50%" style="display:block; margin-left: auto; margin-right: auto;" title="caption" />
 
 This image was then classified with Trimble Ecognition Developer (ver.9.5.1) as follows:
 1. The image was segmented using a "multiresolution segmentation", giving as weights for R,G,B = 1 and NIR = 2. The scale parameter of the segmentation was set to 200. The shape of the homogeneity criterion was set to 0.1 and its compactness was set to 0.5.

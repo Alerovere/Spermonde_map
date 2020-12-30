@@ -14,10 +14,27 @@ This is not the first work where satellite data is used to map the study area. F
 ### Step 1: High-resolution imagery mapping
 The starting point is a high-resolution multispectral (R,G,B,NIR) PLEIADES image acquired on 2020-03-26. The image was pan-sharpened using ArcMap and the panchromatic image accompanying the original dataset. 
 
-IMAGE
+<span class="img_container center" style="display: block;">
+    <img alt="test" src="http://example.com/image.png" style="display:block; margin-left: auto; margin-right: auto;" title="caption" />
+    <span class="img_caption" style="display: block; text-align: center;">caption</span>
+</span>
 
 This image was then classified with Trimble Ecognition Developer (ver.9.5.1) as follows:
 1. The image was segmented using a "multiresolution segmentation", giving as weights for R,G,B = 1 and NIR = 2. The scale parameter of the segmentation was set to 200. The shape of the homogeneity criterion was set to 0.1 and its compactness was set to 0.5.
-2. Six classes were defined: Built environment,Deep water,Shallow-water sand/reef complex,Beach sands,Shallow-water reef,Vegetation. These classes were used in a Nearest Neighbor classification. The results were exported as shapefile (smooting the edges with the built-in Ecognition export function).
+2. Six classes were defined with the help of the pansharpened image: Built environment,Deep water,Shallow-water sand/reef complex,Beach sands,Shallow-water reef,Vegetation. These classes were used in a Nearest Neighbor classification. The results were exported as shapefile (smooting the edges with the built-in Ecognition export function).
+
+The results of the Nearest Neighbor classification are shown hereafter.
+
+IMAGE TRIMBLE RESULTS
+
+### Step 2: SENTINEL2 classification
+The shapefile gathered from Step1 was edited in ArcMap. First, deep water areas were deleted and a simpler feature was drawn, to avoid having too many polygons for the next classification. Second, very small polygons were deleted. A column was added in the shapefile attribute table, with integer values corresponding to classes. Those are the results of classification errors due to the presence of clouds or small boats on the water surface.
+
+This "cleaned" shapefile was then imported as "Asset" in Google Earth Engine. A polygon was drawn to limit the analysis area. Then, the code "Sentinel_Class" was run on the Earth Engine Code Editor. The code uses the shapefile classes as training dataset in a minimum distance classification of SENTINEL2 imagery (2020-01-1 to 2020-10-11). Before proceeding with the classification, the co-registration of the SENTINEL2 and PLEIADES imagery was verified.
+
+The results of the classification were exported in google Drive as GeoTiff, and the image histograms were exported from the Earth Engine Code Editor Console as CSV.
+
+
+
 
 

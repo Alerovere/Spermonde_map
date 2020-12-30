@@ -3,6 +3,7 @@
 // https://developers.google.com/earth-engine/guides/classification
 // https://gis.stackexchange.com/questions/182410/how-can-i-change-the-labels-in-the-console-output-in-google-earth-engine
 // https://gis.stackexchange.com/questions/337358/histogram-of-classified-image-in-google-earth-engine
+// https://gis.stackexchange.com/questions/298371/preventing-google-earth-engine-exporting-image-with-black-border
 
 // Start of code
 // The following clipping geometry was created Earth Engine developer interface
@@ -80,12 +81,17 @@ Map.centerObject(medianpixelsclipped, 9);
 Map.addLayer(medianpixelsclipped, {bands: ['B8', 'B3', 'B2'], min: 0, max: 1, gamma: 1.5}, 'Sentinel_2 mosaic');
 Map.addLayer(class_clip,{min: 0, max: 5},'classes');
 
+// Remap the classified image to avoid NoData mapped as '0'
+var remap = ee.Image(class_clip)
+ .remap([0,1,2,3,5], [1,2,3,4,5]);
+
 // Export the image, specifying scale and region.
 Export.image.toDrive({
-  image: class_clip,
+  image: remap,
   description: 'EE_mindist_10m',
   region: geometry,
   scale: 20,
+  skipEmptyTiles: 'True',
   fileFormat: 'GeoTiff'
 });
 

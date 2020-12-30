@@ -33,10 +33,7 @@ The results of the classification were exported in google Drive as GeoTiff, and 
 
 The resulting map is rendered hereafter. The GeoTiff is available in the "raster" folder.
 
-<img src="images/Result_minDist.jpg" height="70%" width="70%" align="center"/>
-
-
-## 
+<img src="images/Result_minDist.jpg" height="60%" width="60%" align="center"/>
 
 
 

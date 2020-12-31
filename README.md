@@ -38,5 +38,6 @@ The resulting map is rendered hereafter. The GeoTiff is available in the "data/r
 ## Further analysis
 Some simple band analysis can be done with the Jupyter Notebooks annexed to this repository.
 Below, a plot of the bands divided by classes (Exported from Google Earth Engine).
-<img src="images/bands.png" height="70%" width="70%" align="center"/>
+
+<img src="images/bands.png" height="40%" width="40%" align="center"/>
 

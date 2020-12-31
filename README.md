@@ -1,4 +1,7 @@
 # Map of islands and shallow water areas in the Spermonde Archipelago (Indonesia) 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4407106.svg)](https://doi.org/10.5281/zenodo.4407106)
+
 This repository contains data and code used to make a map of islands and shallow water areas for the Spermonde Archipelago, Indonesia. The map was obtained using a two-stepped classification approach, described below, and simple statistics and graphs were then calculated in python.
 
 ## Similar works in the same area

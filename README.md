@@ -36,7 +36,7 @@ The resulting map is rendered hereafter. The GeoTiff is available in the "data/r
 <img src="images/Result_minDist.jpg" height="60%" width="60%" align="center"/>
 
 ## Further analysis
-Some simple band analysis can be done with the Jupyter Notebooks annexed to this repository.
+Some simple band analysis can be done with the Jupyter Notebook annexed to this repository.
 Below, a plot of the bands divided by classes (Exported from Google Earth Engine).
 
 <img src="images/bands.png" height="40%" width="40%" align="center"/>

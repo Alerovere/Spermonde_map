@@ -46,5 +46,8 @@ And an histogram plot of the extent of each class within the mapped scene.
 <img src="images/histograms_onland.png" height="40%" width="40%" align="center"/>
 <img src="images/histograms_shallow.png" height="40%" width="40%" align="center"/>
 
-## Webmap
+# Known issues and "to do" list
+The map was created with a research project, and is given "as is" with NO WARRANTIES WHATSOEVER on its accuracy. Some known issues are:
+1. The classes could be better defined, but this would require ground-truthing
+2. The "shallow water 
 

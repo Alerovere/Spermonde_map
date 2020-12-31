@@ -4,13 +4,22 @@
   </Metadata>
   <PAMRasterBand band="1">
     <Description>remapped</Description>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.4166666666666667</HistMin>
+        <HistMax>5.416666666666667</HistMax>
+        <BucketCount>6</BucketCount>
+        <IncludeOutOfRange>0</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>26818689|40179|167099|4773|847634|31976</HistCounts>
+      </HistItem>
+    </Histograms>
     <Metadata>
       <MDI key="DESCRIPTION">remapped</MDI>
-      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
       <MDI key="STATISTICS_MAXIMUM">5</MDI>
-      <MDI key="STATISTICS_MEAN">0.1416149068323</MDI>
+      <MDI key="STATISTICS_MEAN">0.14113445370624</MDI>
       <MDI key="STATISTICS_MINIMUM">0</MDI>
-      <MDI key="STATISTICS_STDDEV">0.72390924641482</MDI>
+      <MDI key="STATISTICS_STDDEV">0.72219630558725</MDI>
       <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
     </Metadata>
   </PAMRasterBand>

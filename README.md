@@ -46,3 +46,5 @@ And an histogram plot of the extent of each class within the mapped scene.
 <img src="images/histograms_onland.png" height="40%" width="40%" align="center"/>
 <img src="images/histograms_shallow.png" height="40%" width="40%" align="center"/>
 
+## Webmap
+

@@ -49,5 +49,6 @@ And an histogram plot of the extent of each class within the mapped scene.
 # Known issues and "to do" list
 The map was created with a research project, and is given "as is" with NO WARRANTIES WHATSOEVER on its accuracy. Some known issues are:
 1. The classes could be better defined, but this would require ground-truthing
-2. The "shallow water 
+2. The "shallow water reef" may contain areas with both reef and seagrass, that seem to have a quite similar spectral signature
+3. Some "
 

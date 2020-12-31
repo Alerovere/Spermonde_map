@@ -46,9 +46,11 @@ And an histogram plot of the extent of each class within the mapped scene.
 <img src="images/histograms_onland.png" height="40%" width="40%" align="center"/>
 <img src="images/histograms_shallow.png" height="40%" width="40%" align="center"/>
 
-# Known issues and "to do" list
+# Known issues
 The map was created with a research project, and is given "as is" with NO WARRANTIES WHATSOEVER on its accuracy. Some known issues are:
-1. The classes could be better defined, but this would require ground-truthing
-2. The "shallow water reef" may contain areas with both reef and seagrass, that seem to have a quite similar spectral signature
-3. Some "
+1. The classes could be better defined (and maybe increased), but this would require ground-truthing.
+2. The "shallow water reef" may contain areas with both reef and seagrass, that seem to have a quite similar spectral signature.
+3. While the areas around the islands seem well-mapped (probably thanks to the large presence of such features in the training dataset), standalone patches of "shallow water sand/reef complex" were not mapped. Increasing the training dataaset (probably using Google Earth Imagery in Earth Engine?) might help with the classification.
 
+# Acknowledgments
+This work was inspired by the "Geoscientific Project" of Mr. Dennis Flenner, University of Bremen, who classified the same area with SENTINEL2 and QGIS tools. This work was supported through grant SEASCHANGE (RO-5245/1-1) from the Deutsche Forschungsgemeinschaft (DFG) as part of the Special Priority Program (SPP)-1889 “Regional Sea Level Change and Society”.
